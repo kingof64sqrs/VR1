@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <title>360 Video Example</title>
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 <body>
   <a-scene>
+    <!-- Ensure the path to your video is correct -->
     <a-videosphere src="v4.mp4" rotation="0 180 0"></a-videosphere>
+    
+    <!-- Add a video element with controls for debugging -->
+    <video id="video" autoplay loop muted playsinline controls crossorigin="anonymous" webkit-playsinline playsinline>
+      <source src="v4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </a-scene>
 </body>
 </html>
